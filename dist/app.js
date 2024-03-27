@@ -12,7 +12,7 @@ class WebSerialDemoApp {
       await serialHandler.init();
 
       this.messageButtons.forEach((button) => {
-          button.removeAttribute('disabled');
+          button.removeAttribute('enable');
       });
     })
 
