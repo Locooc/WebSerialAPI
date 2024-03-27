@@ -14,7 +14,7 @@ class SerialHandler {
         this.reader = port.readable.getReader();
         
         const signals = await port.getSignals();
-        console.log(signals);
+        console.log(navigator.serial.value);
       } catch(err) {
         console.error('There was an error opening the serial port:', err);
       }
