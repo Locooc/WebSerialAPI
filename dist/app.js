@@ -78,7 +78,7 @@ var WebSerialDemoApp = /** @class */ (function () {
                         now = new Date();
                         listElement = document.createElement('li');
                         _a = listElement;
-                        _b = "Message received at " + String(now.getHours()).padStart(2, '0') + ":" + String(now.getMinutes()).padStart(2, '0') + "." + now.getMilliseconds() + ": ";
+                        _b = "Testing Message received at " + String(now.getHours()).padStart(2, '0') + ":" + String(now.getMinutes()).padStart(2, '0') + "." + now.getMilliseconds() + ": ";
                         return [4 /*yield*/, serialHandler.read()];
                     case 1:
                         _a.innerText = _b + (_c.sent());
