@@ -10,9 +10,10 @@ class WebSerialDemoApp {
 
     this.connectButtonElem.addEventListener('pointerdown', async () => {
       await serialHandler.init();
+      alert("Testing");
 
       this.messageButtons.forEach((button) => {
-          button.removeAttribute('enable');
+          button.removeAttribute('disabled');
       });
     })
 
