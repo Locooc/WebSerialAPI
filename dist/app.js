@@ -14,14 +14,14 @@ class WebSerialDemoApp {
       this.messageButtons.forEach((button) => {
           button.removeAttribute('disabled');
       });
-    });
+    })
 
     this.messageButtons.forEach((button) => {
       button.addEventListener('pointerdown', () => {
         serialHandler.write(String(button.dataset.value));
         this.getSerialMessage();
-      });
-    });
+      })
+    })
   }
   
   async getSerialMessage() {
